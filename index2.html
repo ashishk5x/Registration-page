@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced User Registration</title>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>User Registration Portal</h1>
+    <p>Please fill in all required details to create your account.</p>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <form>
+
+      <!-- ================= BASIC INFORMATION ================= -->
+      <section>
+        <h2>Basic Information</h2>
+
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <p>
+            <label>
+              First Name:
+              <input type="text" name="first_name" required>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Last Name:
+              <input type="text" name="last_name" required>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Date of Birth:
+              <input type="date" name="dob" required>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Gender:
+            </label><br>
+            <label><input type="radio" name="gender" value="male"> Male</label><br>
+            <label><input type="radio" name="gender" value="female"> Female</label><br>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- ================= CONTACT INFORMATION ================= -->
+      <section>
+        <h2>Contact Information</h2>
+
+        <fieldset>
+          <legend>Communication Details</legend>
+
+          <p>
+            <label>
+              Email Address:
+              <input type="email" name="email" required>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Phone Number:
+              <input type="tel" name="phone">
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Website / Portfolio:
+              <input type="url" name="website">
+            </label>
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- ================= ADDRESS ================= -->
+      <section>
+        <h2>Address Details</h2>
+
+        <fieldset>
+          <legend>Permanent Address</legend>
+
+          <p>
+            <label>
+              Address Line:
+              <input type="text" name="address">
+            </label>
+          </p>
+
+          <p>
+            <label>
+              City:
+              <input type="text" name="city">
+            </label>
+          </p>
+
+          <p>
+            <label>
+              State:
+              <input type="text" name="state">
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Country:
+              <input type="text" name="country">
+            </label>
+          </p>
+
+          <p>
+            <label>
+              ZIP / Postal Code:
+              <input type="number" name="zip">
+            </label>
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- ================= ACCOUNT SETUP ================= -->
+      <section>
+        <h2>Account Setup</h2>
+
+        <fieldset>
+          <legend>Login Credentials</legend>
+
+          <p>
+            <label>
+              Username:
+              <input type="text" name="username" required>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Password:
+              <input type="password" name="password" required>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Confirm Password:
+              <input type="password" name="confirm_password" required>
+            </label>
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- ================= PROFESSIONAL DETAILS ================= -->
+      <section>
+        <h2>Professional Details</h2>
+
+        <fieldset>
+          <legend>Career Information</legend>
+
+          <p>
+            <label>
+              Highest Education:
+              <select name="education">
+                <option value="">-- Select --</option>
+                <option>High School</option>
+                <option>Diploma</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PhD</option>
+              </select>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Primary Skill:
+              <input list="skills" name="skill">
+            </label>
+
+            <datalist id="skills">
+              <option value="Java">
+              <option value="Python">
+              <option value="JavaScript">
+              <option value="C++">
+              <option value="Data Science">
+            </datalist>
+          </p>
+
+          <p>
+            Years of Experience:
+            <input type="range" name="experience" min="0" max="20">
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- ================= DOCUMENT UPLOAD ================= -->
+      <section>
+        <h2>Document Upload</h2>
+
+        <fieldset>
+          <legend>Verification Documents</legend>
+
+          <p>
+            Upload Resume (PDF):
+            <input type="file" name="resume" accept=".pdf">
+          </p>
+
+          <p>
+            Upload Profile Photo:
+            <input type="file" name="photo" accept="image/*">
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- ================= PREFERENCES ================= -->
+      <section>
+        <h2>User Preferences</h2>
+
+        <fieldset>
+          <legend>Settings</legend>
+
+          <label><input type="checkbox" name="newsletter"> Subscribe to newsletter</label><br>
+          <label><input type="checkbox" name="notifications"> Enable notifications</label><br>
+          <label><input type="checkbox" name="updates"> Receive product updates</label>
+        </fieldset>
+      </section>
+
+      <!-- ================= TERMS ================= -->
+      <section>
+        <h2>Terms & Agreement</h2>
+
+        <blockquote>
+          <p>
+            "By registering, you agree to follow ethical use and data responsibility."
+          </p>
+        </blockquote>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the Terms & Conditions
+        </label>
+      </section>
+
+      <!-- ================= SUBMIT ================= -->
+      <section>
+        <button type="submit">Register Account</button>
+        <button type="reset">Reset Form</button>
+      </section>
+
+    </form>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Registration System</p>
+  </footer>
+
+</body>
+</html>
