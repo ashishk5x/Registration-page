@@ -1,2 +1,2 @@
-# REgistration-page
+# Registration-page
 Enterprise Onboarding page
