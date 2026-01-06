@@ -1,79 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header><h1>User Registration Portal</h1></header>
     <p>Please fill in all required details to create your account.</p>
     <main>
-        <form>
-            <!-- basic information -->
-            <section>
-                <h2>Basic Information</h2>
-                <fieldset>
-                    <legend>Personal Details</legend>
-                    <p>
-                        <label>First Name: <input type="first-name" name="first-name"></label>
-                    </p>
-                    <p>
-                        <label>Last Name: <input type="last-name" name="last-name"></label>
-                    </p>
-                    <p>
-                        <label>Date of Birth: <input type="date" name="date-of-birth"></label>
-                    </p>
-                    <label>Gender:</label><br>
-                        <label><input type="radio" name="gender" value="male">Male</label><br>
-                        <label><input type="radio" name="gender" value="female">Female</label><br>
-                        <label><input type="radio" name="gender" value="other">Other</label><br>
-                </fieldset>
-            </section>
-            <!-- contact information -->
-            <section>
-                <h2>Contact Information</h2>
-                <fieldset>
-                    <legend>Communication Details</legend>
-                    <p>
-                        <label>Email Address: <input type="email" name="email"></label>
-                    </p>
-                    <p>
-                        <label>Phone Number: <input type="tel" name="phone"></label><br>
-                    </p>
-                    <p>
-                        <label>Website / Portfolio: <input type="url" name="url" protocol="https://"></label>
-                    </p>                          
-                </fieldset>
-            </section>
-            <!-- address -->
-            <section>
-                <h2>Address Details</h2>
-            </section>/
-            <!-- Account Setup -->
-            <section>
-                <h2>Account Setup</h2>
-            </section>
-            <!-- Professional Details -->
-            <section>
-                <h2>Professional Details</h2>
-            </section>
-            <!-- Document Upload -->
-            <section>
-                <h2>Document Upload</h2>
-            </section>
-            <!-- User Preferences -->
-            <section>
-                <h2>User Preferences</h2>
-            </section>
-            <!-- terms -->
-            <section>
-                <h2>Terms & Agreement</h2>
-            </section>
-        </form>
+      <form>
+        <!-- basic information -->
+        <section>
+          <h2>Basic Information</h2>
+          <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+              <label
+                >First Name: <input type="first-name" name="first-name"
+              /></label>
+            </p>
+            <p>
+              <label
+                >Last Name: <input type="last-name" name="last-name"
+              /></label>
+            </p>
+            <p>
+              <label
+                >Date of Birth: <input type="date" name="date-of-birth"
+              /></label>
+            </p>
+            <label>Gender:</label><br />
+            <label><input type="radio" name="gender" value="male" />Male</label
+            ><br />
+            <label
+              ><input type="radio" name="gender" value="female" />Female</label
+            ><br />
+            <label
+              ><input type="radio" name="gender" value="other" />Other</label
+            ><br />
+          </fieldset>
+        </section>
+        <!-- contact information -->
+        <section>
+          <h2>Contact Information</h2>
+          <fieldset>
+            <legend>Communication Details</legend>
+            <p>
+              <label>Email Address: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Phone Number: <input type="tel" name="phone" /></label
+              ><br />
+            </p>
+            <p>
+              <label
+                >Website / Portfolio:
+                <input type="url" name="url" protocol="https://"
+              /></label>
+            </p>
+          </fieldset>
+        </section>
+        <!-- address -->
+        <section>
+          <h2>Address Details</h2>
+          <fieldset>
+            <legend>Permanent Address</legend>
+            <p>
+              <label
+                >Address Line : <input type="text" name="address-line"
+              /></label>
+            </p>
+            <p>
+              <label>City: <input type="text" name="city" /></label>
+            </p>
+            <p>
+              <label>State: <input type="text" name="state" /></label>
+            </p>
+            <p>
+              <label>Country: <input type="text" name="country" /></label>
+            </p>
+            <p>
+              <label
+                >ZIP / Postal Code: <input type="text" name="zip-postal-code"
+              /></label>
+            </p>
+          </fieldset>
+        </section>
+        <!-- Account Setup -->
+        <section>
+          <h2>Account Setup</h2>
+          <fieldset>
+            <legend>Login Credentials</legend>
+            <p>
+              <label>Username: <input type="text" name="username" /></label>
+            </p>
+            <p>
+              <label>Password: <input type="password" name="password" /></label
+              ><br />
+            </p>
+            <p>
+              <label
+                >Confirm Password:
+                <input type="password" name="confirm-password"
+              /></label>
+            </p>
+          </fieldset>
+        </section>
+        <!-- Professional Details -->
+        <section>
+          <h2>Professional Details</h2>
+          <fieldset>
+            <legend>Career Information</legend>
+            <p>
+              <label>Highest Education: </label>
+              <select name="education">
+                <option value="-select-">-Select-</option>
+                <option value="HHigh school">High school</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+                <option value="phd">PhD</option>
+              </select>
+            </p>
+            <p>
+              <label>Primary Skill: <input list="skills" name="skill" /></label>
+              <datalist id="skills">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+                <option value="DData Science">Data Science</option>
+              </datalist>
+            </p>
+            <p>
+              <label
+                >Years of Experience:
+                <input type="range" name="years-of-experience" min="0" max="50"
+              /></label>
+            </p>
+          </fieldset>
+        </section>
+        <!-- Document Upload -->
+        <section>
+          <h2>Document Upload</h2>
+          <fieldset>
+            <legend>Verification Documents</legend>
+            <p>
+              Upload Resume (PDF):
+              <input type="file" accept=".pdf, .jpeg, .jpg" />
+            </p>
+            <p>
+              Upload Profile Photo: <input type="file" accept=".jpeg, .jpg" />
+            </p>
+          </fieldset>
+        </section>
+        <!-- User Preferences -->
+        <section>
+          <h2>User Preferences</h2>
+          <fieldset>
+            <legend>Settings</legend>
+            <p>
+              <label
+                ><input type="checkbox" name="newsletter" /> Subscribe to
+                newsletter</label
+              ><br />
+              <label
+                ><input type="checkbox" name="notifications" /> Enable
+                notifications</label
+              ><br />
+              <label
+                ><input type="checkbox" name="product-updates" /> Receive
+                product updates</label
+              >
+            </p>
+          </fieldset>
+        </section>
+        <!-- terms -->
+        <section>
+          <h2>Terms & Agreement</h2>
+          <blockquote>
+                <p>
+                "By registering, you agree to follow ethical use and data
+                responsibility."
+                </p>
+            </blockquote>
+            <label><input type="checkbox" name="terms" /> I agree to the Terms & Conditions</label><br>
+            <button type="submit" name="register">Register Account</button>
+            <button type="reset" name="reset">Reset</button>
+        </section>
+      </form>
     </main>
     <footer>
-        <p>© 2026 Registration System</p>
+      <p>© 2026 Registration System</p>
     </footer>
-</body>
+  </body>
 </html>
